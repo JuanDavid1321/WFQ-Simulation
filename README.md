@@ -15,7 +15,7 @@ The code simulates the WFQ process in four main components:
 
 * Packet Reception and Ordering: It simulates the reception of packets and orders them based on criteria such as queue priority or arrival time.
 
-* The code is executed through the simulate_wfq(num_packets) function, where num_packets is the number of packets to generate and simulate.
+The code is executed through the simulate_wfq(num_packets) function, where num_packets is the number of packets to generate and simulate.
 
 ## Requirements
 
