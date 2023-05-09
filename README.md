@@ -3,7 +3,7 @@
 # WFQ Packet Scheduler Simulation
 This repository contains a simulation of Weighted Fair Queuing (WFQ) implemented in Python. WFQ is a queue scheduling algorithm used in routers and switches to allocate bandwidth to different network traffic flows based on their assigned weights.
 
-![graficaWFQ](https://www.researchgate.net/publication/335465513/figure/fig2/AS:797186052866049@1567075374747/WFQ-Diagram-Representation.ppm)
+![graficaWFQ]([https://www.researchgate.net/publication/335465513/figure/fig2/AS:797186052866049@1567075374747/WFQ-Diagram-Representation.ppm](https://slideplayer.com/slide/4669640/15/images/10/Weighted+Fair+Queuing+%28WFQ%29.jpg))
 
 ## Code Description
 
