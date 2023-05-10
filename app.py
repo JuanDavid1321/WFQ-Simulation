@@ -1,4 +1,3 @@
-
 from funciones import *
 #--------------------------------------------------------------------------------------------------------------------------------------------------
 # Simulación del proceso de WFQ
@@ -7,9 +6,13 @@ def simular_wfq(num_paquetes):
     # Crear diccionario colas -> {1:[], 2:[], 3:[]}...
     colas = {cola: [] for cola in weights}
 
+    print('-'*80)
+    print('Paquetes generados aleatoriamente'.center(80))
+    print('-'*80)
     # Recorrer la cantidad de paquetes especificados por usuario
     for _ in range(num_paquetes):
         paquete_generado = generar_paquete() # Llamado a la función de generación de paquetes aleatorios
+        print(paquete_generado)
         cola, paquete = clasificar_paquete(paquete_generado) # Llamado a la función de clasificación para obtener el peso (cola) de cada paquete
         colas[cola].append(paquete) # Agregar al diccionario 'colas' cada objeto según la llave
 
