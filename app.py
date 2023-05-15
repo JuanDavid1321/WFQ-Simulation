@@ -23,7 +23,6 @@ def simular_wfq(num_paquetes):
     recepcion_ordenamiento_paquetes(colas)
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------
-entrada_num_paquetes = int(input('Ingrese el número de paquetes a generar: '))
-simular_wfq(entrada_num_paquetes)
+simular_wfq(int(input('Ingrese el número de paquetes a generar: ')))
 #--------------------------------------------------------------------------------------------------------------------------------------------------
 

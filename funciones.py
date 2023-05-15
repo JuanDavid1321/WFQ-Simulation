@@ -13,14 +13,14 @@ def generar_paquete():
     origen = f'192.168.101.{random.randint(1, 100)}'
     destino = f'192.168.101.{random.randint(1, 100)}'
 
-    cola = random.choice(list(weights.keys()))  # Agregar la clave 'cola' seleccionada del diccionario 'weights'
+    peso = random.choice(list(weights.keys()))  # Agregar la clave 'peso' seleccionada del diccionario 'weights'
 
     # Retornar un diccionario (paquete) con las llaves generadas
-    return {'Origen': origen, 'Destino': destino, 'Cola': cola}  
+    return {'Origen': origen, 'Destino': destino, 'Peso': peso}  
 #--------------------------------------------------------------------------------------------------------------------------------------------------
 # Clasificar paquetes en las colas según sus pesos
 def clasificar_paquete(paquete):
-    cola_seleccionada = paquete['Cola']
+    cola_seleccionada = paquete['Peso']
     return cola_seleccionada, paquete
 #--------------------------------------------------------------------------------------------------------------------------------------------------
 # Enviar paquetes de las colas
@@ -39,7 +39,7 @@ def recepcion_ordenamiento_paquetes(colas):
         paquetes_recibidos.extend(colas[cola])
 
     # Ordenar según el peso (cola) los paquetes
-    paquetes_recibidos.sort(key=lambda p: weights[p['Cola']])
+    paquetes_recibidos.sort(key=lambda p: weights[p['Peso']])
 
     print("Paquetes recibidos y ordenados por peso".center(80))
     print('-' * 80)
